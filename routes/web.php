@@ -18,6 +18,7 @@ Route::get('/', [PageController::class, 'home']);
 Route::get('/about', [PageController::class, 'about']);
 Route::prefix('/product')->group(function () {
     Route::get('/', [PageController::class, 'product']);
+    Route::get('/detail/{id}', [PageController::class, 'detailProduct']);
 });
 
 Route::get('/contact', [PageController::class, 'contact']);

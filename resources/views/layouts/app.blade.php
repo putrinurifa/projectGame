@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
         rel="stylesheet">
@@ -37,10 +36,10 @@
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
-    <header>
+    <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="http://127.0.0.1:8000/">
+                <a class="navbar-brand" href="index.html">
                     <h2>iStudy<em>.</em></h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -50,28 +49,25 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item @yield('statusHome')">
-                            <a class="nav-link" href="http://127.0.0.1:8000/">Home
+                            <a class="nav-link" href="/">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item @yield('statusAbout')">
-                            <a class="nav-link" href="{{ 'about' }}">About Us</a>
+                            <a class="nav-link" href="/about">About Us</a>
                         </li>
                         <li class="nav-item @yield('statusProduct')">
-                            <a class="nav-link" href="{{ 'product' }} ">Product</a>
+                            <a class="nav-link" href="/product">Product</a>
                         </li>
                         <li class="nav-item @yield('statusContact')">
-                            <a class="nav-link" href="{{ 'contact' }}">Contact Us</a>
+                            <a class="nav-link" href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <div id="content">
-        @yield('content')
-    </div>
+    @yield('content')
 
     <footer>
         <div class="container">

@@ -28,7 +28,7 @@
     <div class="row">
         <div class="container">
             @for ($i = 0; $i < 6; $i++)
-                <a href="#" class="detailProduct">
+                <a href="/product/detail/{{$i}}" class="detailProduct">
                     <div class="card product" style="width: 18rem; float: left; margin: 40px;">
                         <img src="/images/{{ $gambar[$i] }}" class="card-img-top" alt="">
                         <div class="card-body">
