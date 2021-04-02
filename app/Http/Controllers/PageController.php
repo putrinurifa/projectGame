@@ -21,6 +21,11 @@ class PageController extends Controller
         return view('product', ['status'=>'active']);
     }
 
+    public function detailProduct($id)
+    {
+        return view('detailProduct', ['status'=>'active', 'id'=>$id]);
+    }
+
     public function contact()
     {
         return view('contact-us', ['status'=>'active']);
