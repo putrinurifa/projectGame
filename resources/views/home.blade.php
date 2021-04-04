@@ -103,7 +103,7 @@
               <h4>Looking for the best products?</h4>
               <p><a rel="nofollow" href="/product/detail/{{$i}}" target="detailProduct">Halaman Leaderboard</a> akan muncul jika pemain telah menyelesaikan permainan pada satu kategori. Pada halaman ini pemain dapat melihat ranking dari akurasi skor 
                      yang didapat<a rel="nofollow" href="about"> About Us</a> for more info.</p>
-              <a href="product" class="filled-button">Read More</a>
+              <a href="product" class="btn btn-primary">Read More</a>
             </div>
           </div>
           <div class="col-md-6">

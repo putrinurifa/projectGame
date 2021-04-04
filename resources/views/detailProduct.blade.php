@@ -5,32 +5,6 @@
 @endsection
 
 @section('content')
-
-    <head>
-        <style>
-            .back {
-                font-family: "Poppins", sans-serif;
-                text-decoration: none;
-                font-weight: 100;
-                font-size: 20px;
-                letter-spacing: 1px;
-                display: inline-block;
-                padding: 0px 10px;
-                border-radius: 5px;
-                transition: 0.5s;
-                margin: 20px 10px;
-                background: #F48840;
-                border: 2px solid rgb(255, 253, 253);
-                color: black;
-            }
-
-            .back:hover {
-                background: #a74d11;
-                border: 2px solid #a74d11;
-                color: #fff;
-            }
-        </style>
-    </head>
     <div class="heading-page header-text">
         <section class="page-heading">
             <div class="container">
@@ -90,7 +64,7 @@
                 @endif
                 <p>{{ $detail[$id] }}</p>
             </div>
-            <a href="/product" class="back">Kembali</a>
+            <a href="/product" class="btn btn-primary" style="padding: 0 10px; margin: 20px 10px;">Kembali</a>
         </div>
     </div>
 @endsection
