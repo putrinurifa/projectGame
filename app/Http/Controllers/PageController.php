@@ -30,4 +30,9 @@ class PageController extends Controller
     {
         return view('contact-us', ['status'=>'active']);
     }
+
+    public function sign()
+    {
+        return view('sign', ['status'=>'active']);
+    }
 }

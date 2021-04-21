@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('css/templatemo-stand-blog.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dropdown.css">
 
 </head>
 
@@ -61,6 +62,12 @@
                         </li>
                         <li class="nav-item @yield('statusContact')">
                             <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown @yield('statusSign')">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/register">Register</a></li>
                         </li>
                     </ul>
                 </div>

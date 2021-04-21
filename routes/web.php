@@ -22,3 +22,8 @@ Route::prefix('/product')->group(function () {
 });
 
 Route::get('/contact', [PageController::class, 'contact']);
+Route::get('/sign', [PageController::class, 'sign']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
