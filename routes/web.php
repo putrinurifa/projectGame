@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +23,6 @@ Route::prefix('/product')->group(function () {
 });
 
 Route::get('/contact', [PageController::class, 'contact']);
-Route::get('/sign', [PageController::class, 'sign']);
 
 Auth::routes();
 

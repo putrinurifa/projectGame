@@ -553,7 +553,26 @@
 
 }
 
+.btn-light{
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
 
+.btn-light:hover{
+  background: #E78340;
+  border: 2px solid #E78340;
+  color: #fff;
+}
 
 @media screen and (max-width:768px) {
 
