@@ -51,17 +51,17 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>Detail Halaman Game</h2><br>
-                <img src="/images/{{ $gambar[$id] }}" alt=""><br><br>
+                <img src="/images/{{ $gambar[$id] }}" width="720px" height="480px" alt=""><br><br>
                 @if ($id == 1)
                     <br>
                     <h5>Halaman Kategori Game Mudah</h5><br>
-                    <img src="/images/{{ $img[0] }}" alt=""><br>
+                    <img src="/images/{{ $img[0] }}" width="720px" height="480px" alt=""><br>
                     <br>
                     <h5>Halaman Kategori Game Sedang</h5><br>
-                    <img src="/images/{{ $img[1] }}" alt=""><br>
+                    <img src="/images/{{ $img[1] }}" width="720px" height="480px" alt=""><br>
                     <br>
                     <h5>Halaman Kategori Game Sulit</h5><br>
-                    <img src="/images/{{ $img[2] }}" alt=""><br><br>
+                    <img src="/images/{{ $img[2] }}" width="720px" height="480px" alt=""><br><br>
                 @endif
                 <p>{{ $detail[$id] }}</p>
             </div>

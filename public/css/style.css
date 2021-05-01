@@ -750,3 +750,45 @@
 #hero-kategori .btn-level-mudah:hover{
   transform: scale(1.25);
 }
+
+#hero-kategori .btn-level-sedang {
+  display: inline-block;
+  padding: 20px 30px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 56px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: #ADAF2F;
+}
+
+#hero-kategori .btn-level-sedang:hover{
+  transform: scale(1.25);
+}
+
+#hero-kategori .btn-level-sulit {
+  display: inline-block;
+  padding: 20px 30px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 56px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: #B71717;
+}
+
+#hero-kategori .btn-level-sulit:hover{
+  transform: scale(1.25);
+}
