@@ -23,6 +23,7 @@
     $gambar = ['gambar0.png', 'gambar1.png', 'gambar5.png', 'gambar6.png', 'gambar7.png', 'gambar8.png'];
     $keterangan = ['Halaman awal game', 'Halaman memilih kategori game', 'Halaman bermain soal mudah', 'Halaman bermain soal sedang', 'Halaman bermain soal sulit', 'Halaman leaderboard pemain'];
     $title = ['Halaman Utama', 'Halaman Kategori', 'Halaman Soal Mudah', 'Halaman Soal Sedang', 'Halaman Soal Sulit', 'Halaman Leaderboard'];
+    $url = ['/utama', '/kategori', '/mudah', '/sedang', '/sulit', '/leaderboard'];
     @endphp
     <div class="row">
         <div class="container">
@@ -36,7 +37,7 @@
                             @guest
 
                             @else
-                                <a href="#" class="btn btn-light">Coba</a>
+                                <a href="{{$url[$i]}}" class="btn btn-light">Coba</a>
                             @endguest
                         </div>
                     </div>

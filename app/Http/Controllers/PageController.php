@@ -30,4 +30,29 @@ class PageController extends Controller
     {
         return view('contact-us', ['status'=>'active']);
     }
+
+    public function gameUtama()
+    {
+        return view('game.utama');
+    }
+
+    public function gameKategori()
+    {
+        return view('game.kategori');
+    }
+
+    public function levelMudah()
+    {
+        return view('game.listMudah');
+    }
+
+    public function levelSedang()
+    {
+        return view('game.listSedang');
+    }
+
+    public function levelSulit()
+    {
+        return view('game.listSulit');
+    }
 }
