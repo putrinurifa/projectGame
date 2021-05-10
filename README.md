@@ -19,9 +19,9 @@
 
 - Home
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/home1.PNG)
-<p>Pada halaman home akan ditampilkan navbar yang terdiri dari home, about us, product, dan contact us. Kemudian akan ditampilkan background yaitu gambar dari halaman utama dari game iStudy.  
+Pada halaman home akan ditampilkan navbar yang terdiri dari home, about us, product, dan contact us. Kemudian akan ditampilkan background yaitu gambar dari halaman utama dari game iStudy.  
 Kemudian ketika kita scroll kebawah akan menampilkan beberapa dari produk dan ketika kita klik view all product maka akan dialihkan ke halaman product.
-Kemudian ketika kita scroll akan ditampilkan bebraga gambar, dan kemudian akan menampilkan sedikit ulasan yang ketika kita klik tulisan biru maka akan menuju ke halaman about us.</p>
+Kemudian ketika kita scroll akan ditampilkan bebraga gambar, dan kemudian akan menampilkan sedikit ulasan yang ketika kita klik tulisan biru maka akan menuju ke halaman about us.
 
 - About-Us
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/about1.PNG)
@@ -42,7 +42,7 @@ Pada halaman login, akan menampilkan untuk pengisian email dan password yang sud
 
 - Product
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/product.PNG)
-<p>Halaman Product menampilkan semua product yang ada di game. Product yang kami maksud adalah gambar atau halaman apa saja yang ada di halaman product. Kemudian ketika kita klik maka akan menampilkan semua keterangan secara mendetail dari product tersebut seperti dibawah ini.</p>
+Halaman Product menampilkan semua product yang ada di game. Product yang kami maksud adalah gambar atau halaman apa saja yang ada di halaman product. Kemudian ketika kita klik maka akan menampilkan semua keterangan secara mendetail dari product tersebut seperti dibawah ini.
 
 - Product setelah Login
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/productlog.PNG)
