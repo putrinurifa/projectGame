@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-@section('statusSign')
-    {{$status}}
-@endsection
-
 @section('content')
 <br><br><br><br><br><br>
 <div class="container">
