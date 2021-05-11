@@ -34,9 +34,12 @@ Route::get('/levelSedang', [PageController::class, 'levelSedang'])->middleware('
 Route::get('/levelSulit', [PageController::class, 'levelSulit'])->middleware('auth');
 
 // Route mulai game
-Route::get('/habis', [PageController::class, 'habis'])->middleware('auth');
 Route::get('/gameMudah/{id}', [PageController::class, 'gameMudah'])->middleware('auth');
+Route::get('/gameSedang/{id}', [PageController::class, 'gameSedang'])->middleware('auth');
+Route::get('/habisMudah', [PageController::class, 'habisMudah'])->middleware('auth');
+Route::get('/habisSedang', [PageController::class, 'habisSedang'])->middleware('auth');
 Route::get('/hasilMudah/{username}/{jawaban}/{id}', [PageController::class, 'hasilMudah'])->middleware('auth');
+Route::post('/hasilSedang', [PageController::class, 'hasilSedang'])->middleware('auth');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -22,6 +22,7 @@ class CreateGamesTable extends Migration
             $table->text('pilihan2')->nullable();
             $table->text('pilihan3')->nullable();
             $table->string('kategori');
+            $table->integer('no_soal');
             $table->integer('skor');
             $table->timestamps();
         });

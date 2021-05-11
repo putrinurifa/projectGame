@@ -25,18 +25,29 @@ class GameSeeder extends Seeder
         $pilihan3 = "Petra";
         $kategori = ['Mudah', 'Sedang', 'Sulit'];
         $skor = [10,25,50];
+        $no = [1,1,1];
 
         for ($i = 0; $i < 3; $i++) {
             if($i==0){
                 DB::table('games')->insert([
                     'soal' => $soal[$i],
-                    'image' => $image,
                     'jawaban' => $jawaban[$i],
                     'pilihan1' => $pilihan1,
                     'pilihan2' => $pilihan2,
                     'pilihan3' => $pilihan3,
                     'kategori' => $kategori[$i],
-                    'skor' => $skor[$i]
+                    'skor' => $skor[$i],
+                    'no_soal' => $no[$i]
+                ]);
+            }
+            else if($i==2){
+                DB::table('games')->insert([
+                    'soal' => $soal[$i],
+                    'image' => $image,
+                    'jawaban' => $jawaban[$i],
+                    'kategori' => $kategori[$i],
+                    'skor' => $skor[$i],
+                    'no_soal' => $no[$i]
                 ]);
             }
             else {
@@ -44,7 +55,8 @@ class GameSeeder extends Seeder
                     'soal' => $soal[$i],
                     'jawaban' => $jawaban[$i],
                     'kategori' => $kategori[$i],
-                    'skor' => $skor[$i]
+                    'skor' => $skor[$i],
+                    'no_soal' => $no[$i]
                 ]);
             }
         }

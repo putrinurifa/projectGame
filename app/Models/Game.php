@@ -9,11 +9,27 @@ class Game extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'soal',
+        'image',
+        'jawaban',
+        'kategori',
+        'skor',
+    ];
+
     public static function getByIdMudah($id)
     {
         return Game::where([
-            'id' => $id,
-            'kategori' => 'Mudah'
+            'kategori' => 'Mudah',
+            'no_soal' => $id
+        ])->first();
+    }
+
+    public static function getByIdSedang($id)
+    {
+        return Game::where([
+            'kategori' => 'Sedang',
+            'no_soal' => $id
         ])->first();
     }
 }

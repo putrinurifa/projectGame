@@ -64,6 +64,11 @@ class PageController extends Controller
         return view('game.mudah', ['mudah' => Game::getByIdMudah($id)]);
     }
 
+    public function gameSedang($id)
+    {
+        return view('game.sedang', ['sedang' => Game::getByIdSedang($id)]);
+    }
+
     public function hasilMudah($username, $jawaban, $id)
     {
         $game = Game::getByIdMudah($id);
@@ -85,9 +90,39 @@ class PageController extends Controller
         }
     }
 
-    public function habis()
+    public function hasilSedang(Request $request)
     {
-        alert()->warning('WarningAlert','Waktu habis!');
+        $nomor = $request->nomor;
+        $username = $request->username;
+        $game = Game::getByIdSedang($nomor);
+        $user = User::getByName($username);
+
+        $hasil = strtolower($game->jawaban);
+        $jawaban = strtolower($request->jawaban);
+        if($hasil == $jawaban){
+            $skorSoal = $game->skor;
+            $skorUser = $user->skor;
+            $skor = $skorSoal + $skorUser;
+            $user->update(['skor'=>$skor]);
+
+            alert()->success('Selamat','Jawaban kamu benar');
+            return redirect('/levelSedang');
+        }
+        else {
+            alert()->error('Oops...','Jawaban Kamu Salah');
+            return redirect('/levelSedang');
+        }
+    }
+
+    public function habisMudah()
+    {
+        alert()->warning('Oops...','Waktu habis!');
         return redirect('/levelMudah');
+    }
+
+    public function habisSedang()
+    {
+        alert()->warning('Oops...','Waktu habis!');
+        return redirect('/levelSedang');
     }
 }
