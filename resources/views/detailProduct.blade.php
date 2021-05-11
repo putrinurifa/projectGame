@@ -44,7 +44,7 @@
     ];
     $gambar = ['gambar0.png', 'gambar1.png', 'gambar5.png', 'gambar6.png', 'gambar7.png', 'gambar8.png'];
     $img = ['gambar2.png', 'gambar3.png', 'gambar4.png'];
-    $url = ['/utama', '/kategori', '/mudah', '/sedang', '/sulit', '/leaderboard'];
+    $url = ['/utama', '/kategori', '/levelMudah', '/levelSedang', '/levelSulit', '/leaderboard'];
     @endphp
     <br><br><br><br>
     <div class="container">

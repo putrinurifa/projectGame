@@ -8,12 +8,12 @@
 </p>
 
 ## TIM
-|Nim	    |Nama				                |
-|-----------|-----------------------------------|
-|1941720057 |[Muhammad Syifa’ul Ikrom Almasyriqi](https://github.com/Almasyriqi) |
-|1941720171 |[Muhammad Fauzan](https://github.com/fauzanmuh) |
-|1941720036 |[Putri Nurifa Firdausia](https://github.com/putrinurifa) |
-|1841720163 |[Rakha Elang Gunawan](https://github.com/rakhaegg) |
+|Nim	    |Nama				                |Username Github|
+|-----------|-----------------------------------|---------------|
+|1941720057 |[Muhammad Syifa’ul Ikrom Almasyriqi](https://github.com/Almasyriqi) |Almasyriqi |
+|1941720171 |[Muhammad Fauzan](https://github.com/fauzanmuh) |fauzanmuh |
+|1941720036 |[Putri Nurifa Firdausia](https://github.com/putrinurifa) |putrinurifa |
+|1841720163 |[Rakha Elang Gunawan](https://github.com/rakhaegg) |rakhaegg |
 
 ## Screenshot Program
 
@@ -59,5 +59,3 @@ User dapat memilih tingkat kesulitan.
 
 - Halaman Level Sulit
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/sulit.PNG)
-
-User diharuskan memulai dari level 1.

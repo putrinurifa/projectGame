@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/templatemo-stand-blog.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -59,6 +59,7 @@
         }
 
     </script>
+    @include('sweetalert::alert')
 </body>
 
 </html>

@@ -26,11 +26,17 @@ Route::get('/contact', [PageController::class, 'contact']);
 
 Auth::routes();
 
-// Route game
+// Route awal game
 Route::get('/utama', [PageController::class, 'gameUtama'])->middleware('auth');
 Route::get('/kategori', [PageController::class, 'gameKategori'])->middleware('auth');
 Route::get('/levelMudah', [PageController::class, 'levelMudah'])->middleware('auth');
 Route::get('/levelSedang', [PageController::class, 'levelSedang'])->middleware('auth');
 Route::get('/levelSulit', [PageController::class, 'levelSulit'])->middleware('auth');
+
+// Route mulai game
+Route::get('/habis', [PageController::class, 'habis'])->middleware('auth');
+Route::get('/gameMudah/{id}', [PageController::class, 'gameMudah'])->middleware('auth');
+Route::get('/hasilMudah/{username}/{jawaban}/{id}', [PageController::class, 'hasilMudah'])->middleware('auth');
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

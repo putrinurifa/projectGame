@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'skor',
     ];
 
     /**
@@ -40,4 +41,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function getByName($name)
+    {
+        return User::where([
+            'name' => $name
+        ])->first();
+    }
 }
