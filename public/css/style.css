@@ -14,7 +14,7 @@
   width: 100%;
   height: 100vh;
   background: url("../images/gambar0.png") top center;
-  background-size: 1540px 720px;
+  background-size: 1540px 780px;
   position: relative;
 }
 
@@ -627,7 +627,7 @@
   width: 100%;
   height: 100vh;
   background: url("../images/gambar-bg.png") top center;
-  background-size: 1580px 720px;
+  background-size: 1580px 780px;
   position: relative;
 }
 
@@ -798,7 +798,7 @@
   width: 100%;
   height: 100vh;
   background: url("../images/bg-game.jpg") top center;
-  background-size: 1580px 720px;
+  background-size: 1580px 780px;
   position: relative;
 }
 
