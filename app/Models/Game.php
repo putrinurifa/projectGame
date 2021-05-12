@@ -32,4 +32,12 @@ class Game extends Model
             'no_soal' => $id
         ])->first();
     }
+
+    public static function getByIdSulit($id)
+    {
+        return Game::where([
+            'kategori' => 'Sulit',
+            'no_soal' => $id
+        ])->first();
+    }
 }

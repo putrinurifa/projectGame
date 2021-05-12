@@ -69,6 +69,11 @@ class PageController extends Controller
         return view('game.sedang', ['sedang' => Game::getByIdSedang($id)]);
     }
 
+    public function gameSulit($id)
+    {
+        return view('game.sulit', ['sulit' => Game::getByIdSulit($id)]);
+    }
+
     public function hasilMudah($username, $jawaban, $id)
     {
         $game = Game::getByIdMudah($id);
@@ -114,15 +119,45 @@ class PageController extends Controller
         }
     }
 
-    public function habisMudah()
+    public function hasilSulit(Request $request)
+    {
+        $nomor = $request->nomor;
+        $username = $request->username;
+        $game = Game::getByIdSulit($nomor);
+        $user = User::getByName($username);
+
+        $hasil = strtolower($game->jawaban);
+        $jawaban = strtolower($request->jawaban);
+        if($hasil == $jawaban){
+            $skorSoal = $game->skor;
+            $skorUser = $user->skor;
+            $skor = $skorSoal + $skorUser;
+            $user->update(['skor'=>$skor]);
+
+            alert()->success('Selamat','Jawaban kamu benar');
+            return redirect('/levelSulit');
+        }
+        else {
+            alert()->error('Oops...','Jawaban Kamu Salah');
+            return redirect('/levelSulit');
+        }
+    }
+
+    public function timeoutMudah()
     {
         alert()->warning('Oops...','Waktu habis!');
         return redirect('/levelMudah');
     }
 
-    public function habisSedang()
+    public function timeoutSedang()
     {
         alert()->warning('Oops...','Waktu habis!');
         return redirect('/levelSedang');
+    }
+
+    public function timeoutSulit()
+    {
+        alert()->warning('Oops...','Waktu habis!');
+        return redirect('/levelSulit');
     }
 }

@@ -23,24 +23,24 @@
             </div>
             <div class="row">
                 <div class="col-xl-4">
-                    <a href="/levelsulit/1" class="btn-level-sulit">Level 1</a>
+                    <a href="/gameSulit/1" class="btn-level-sulit">Level 1</a>
                 </div>
                 <div class="col-xl-4">
-                    <a href="/levelsulit/2" class="btn-level-sulit">Level 2</a>
+                    <a href="/gameSulit/2" class="btn-level-sulit">Level 2</a>
                 </div>
                 <div class="col-xl-4">
-                    <a href="/levelsulit/3" class="btn-level-sulit">Level 3</a>
+                    <a href="/gameSulit/3" class="btn-level-sulit">Level 3</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-4">
-                    <a href="/levelsulit/4" class="btn-level-sulit">Level 4</a>
+                    <a href="/gameSulit/4" class="btn-level-sulit">Level 4</a>
                 </div>
                 <div class="col-xl-4">
-                    <a href="/levelsulit/5" class="btn-level-sulit">Level 5</a>
+                    <a href="/gameSulit/5" class="btn-level-sulit">Level 5</a>
                 </div>
                 <div class="col-xl-4">
-                    <a href="/levelsulit/6" class="btn-level-sulit">Level 6</a>
+                    <a href="/gameSulit/6" class="btn-level-sulit">Level 6</a>
                 </div>
             </div>
         </div>

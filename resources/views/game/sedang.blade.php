@@ -59,7 +59,7 @@
             setTimeout("startClock()", 1000);
 
             if (count == 0) {
-                window.location = "/habisSedang";
+                window.location = "/timeoutSedang";
                 //count=0;
             }
         }

@@ -7,7 +7,7 @@
 
             <div id="back" class="pull-right">
                 <h2>
-                    <a href="/levelMudah" class="btn-back">
+                    <a href="/levelSulit" class="btn-back">
                         <</a>
                 </h2>
                 <h2 id="status"></h2>
@@ -22,31 +22,37 @@
                 <div class="col-md-12">
                     <div class="container">
                         <div class="soal">
-                            <p>{{$mudah->soal}}</p>
+                            <img src="/images/{{$sulit->image}}" width="540px" height="240px" alt="">
+                            <p>{{$sulit->soal}}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-4">
-                    <a href="/hasilMudah/{{Auth::user()->name}}/pilihan1/{{$mudah->no_soal}}" class="btn-soal-mudah">{{$mudah->pilihan1}}</a>
+            <form action="/hasilSulit" method="post">
+                @csrf
+                <div class="row">
+                    <div class="col-xl-9">
+                        <input type="text" name="jawaban" class="form-control" id="jawaban" placeholder="Jawaban"> 
+                        <input type="text" name="username" id="username" class="form-control" value="{{Auth::user()->name}}">
+                        <input type="text" name="nomor" id="nomor" class="form-control" value="{{$sulit->no_soal}}">
+                    </div>
+                    <div class="col-xl-3">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
                 </div>
-                <div class="col-xl-4">
-                    <a href="/hasilMudah/{{Auth::user()->name}}/pilihan2/{{$mudah->no_soal}}" class="btn-soal-mudah">{{$mudah->pilihan2}}</a>
-                </div>
-                <div class="col-xl-4">
-                    <a href="/hasilMudah/{{Auth::user()->name}}/pilihan3/{{$mudah->no_soal}}" class="btn-soal-mudah">{{$mudah->pilihan3}}</a>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
     <script type="text/Javascript">
+
         //120 detik
         const timer = 31;
         var count = timer;
 
         startClock();
         function startClock() {
+            document.getElementById("username").style.visibility = "hidden";
+            document.getElementById("nomor").style.visibility = "hidden";
             if (count > 0) {
                 count -= 1;
             }
@@ -54,7 +60,7 @@
             setTimeout("startClock()", 1000);
 
             if (count == 0) {
-                window.location = "/timeoutMudah";
+                window.location = "/timeoutSulit";
                 //count=0;
             }
         }
