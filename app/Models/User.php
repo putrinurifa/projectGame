@@ -48,4 +48,9 @@ class User extends Authenticatable
             'name' => $name
         ])->first();
     }
+
+    public static function getAll()
+    {
+        return User::orderBy('skor', 'desc')->get();
+    }
 }

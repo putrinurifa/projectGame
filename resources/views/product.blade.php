@@ -29,7 +29,7 @@
         <div class="container">
             @for ($i = 0; $i < 6; $i++)
                 <a href="/product/detail/{{ $i }}" class="detailProduct">
-                    <div class="card product" style="width: 18rem; float: left; margin: 40px;">
+                    <div class="card product" style="width: 18rem; height: 18rem; float: left; margin: 40px;">
                         <img src="/images/{{ $gambar[$i] }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">{{ $title[$i] }}</h5>

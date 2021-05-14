@@ -86,7 +86,7 @@ class PageController extends Controller
             $skor = $skorSoal + $skorUser;
             $user->update(['skor'=>$skor]);
 
-            alert()->success('Selamat','Jawaban kamu benar');
+            alert()->success('Selamat','Jawaban kamu benar dan mendapat skor ' . $skorSoal);
             return redirect('/levelMudah');
         }
         else {
@@ -110,7 +110,7 @@ class PageController extends Controller
             $skor = $skorSoal + $skorUser;
             $user->update(['skor'=>$skor]);
 
-            alert()->success('Selamat','Jawaban kamu benar');
+            alert()->success('Selamat','Jawaban kamu benar dan mendapat skor ' . $skorSoal);
             return redirect('/levelSedang');
         }
         else {
@@ -134,7 +134,7 @@ class PageController extends Controller
             $skor = $skorSoal + $skorUser;
             $user->update(['skor'=>$skor]);
 
-            alert()->success('Selamat','Jawaban kamu benar');
+            alert()->success('Selamat','Jawaban kamu benar dan mendapat skor ' . $skorSoal);
             return redirect('/levelSulit');
         }
         else {
@@ -159,5 +159,10 @@ class PageController extends Controller
     {
         alert()->warning('Oops...','Waktu habis!');
         return redirect('/levelSulit');
+    }
+
+    public function leaderboard()
+    {
+        return view('game.leaderboard', ['leaderboard' => User::getAll()]);
     }
 }

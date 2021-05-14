@@ -29,17 +29,16 @@
                             Setiap level memiliki beberapa soal yang mana tingkat kesulitan berdasarkan kategori yang dipilih. 
                             Setelah player memilih kategori, player dapat memulai permainan dengan klik level yang dipilih.",
         "Pada halaman ini disajikan soal dengan kategori mudah yaitu dengan menjawab soal dengan memilih pilihan jawaban
-                            yang telah disediakan. Soal yang disajikan dapat berupa pertanyaan, soal cerita, atau gambar. Terdapat tiga
-                            pilihan jawaban, pemain harus memilih jawaban yang paling tepat dengan waktu yang singkat agar 
-                            mendapat poin yang tinggi.",
-        "Pada halaman ini disajikan soal dengan kategori sedang yaitu dengan menjawab soal dengan memilih huruf yang telah disediakan. 
-                            Soal yang disajikan dapat berupa pertanyaan, soal cerita, atau gambar. Terdapat beberapa kotak untuk diisi sesuai dengan kotak 
-                            huruf yang disediakan, pemain harus merangkai huruf yang disediakan dengan tepat sesuai jawaban dari soal waktu yang singkat agar 
-                            mendapat poin yang tinggi.",
+                            yang telah disediakan. Soal yang disajikan dapat berupa pertanyaan atau soal cerita. Terdapat tiga
+                            pilihan jawaban, pemain harus memilih jawaban yang paling tepat dengan waktu yang telah ditentukan
+                            agar mendapat poin.",
+        "Pada halaman ini disajikan soal dengan kategori sedang yaitu dengan menjawab soal dengan mengisi jawaban pada box yang telah disediakan. 
+                            Soal yang disajikan dapat berupa pertanyaan atau soal cerita. Pemain harus menjawab soal dengan tepat sesuai waktu yang disediakan agar 
+                            mendapat poin.",
         "Pada halaman ini disajikan soal dengan kategori sulit yaitu menebak gambar dari soal dan mengisi jawaban
-                            secara langsung pada box yang telah disediakan. Pemain dapat klik tombol ok jika sudah mengisi jawaban. Pemain menebak gambar dengan tepat 
-                            dengan waktu yang singkat agar mendapat poin yang tinggi.",
-        "Halaman Leaderboard akan muncul jika pemain telah menyelesaikan permainan pada satu kategori. Pada halaman ini pemain dapat melihat ranking dari akurasi skor 
+                            secara langsung pada box yang telah disediakan. Pemain dapat klik tombol submit jika sudah mengisi jawaban. Pemain menebak gambar dengan tepat 
+                            dengan waktu yang telah ditentukan agar mendapat poin.",
+        "Halaman Leaderboard dapat dilihat dengan klik tombol dengan icon tropi pada halaman kategori. Pada halaman ini pemain dapat melihat ranking dari akurasi skor 
                             yang didapat.",
     ];
     $gambar = ['gambar0.png', 'gambar1.png', 'gambar5.png', 'gambar6.png', 'gambar7.png', 'gambar8.png'];

@@ -793,7 +793,7 @@
   transform: scale(1.25);
 }
 
-/* style game mudah */
+/* style dalam game */
 #hero-games {
   width: 100%;
   height: 100vh;
@@ -816,11 +816,11 @@
 }
 
 div.soal {
-  opacity: 0.8;
+  opacity: 0.9;
   margin: 30px;
   border: 1px solid black;
   background-color: #ffffff;
-  filter: alpha(opacity=80); /* This is for IE8 and other earlier browsers */
+  filter: alpha(opacity=90); /* This is for IE8 and other earlier browsers */
 }
 
 div.soal p {
@@ -848,4 +848,73 @@ div.soal p {
 
 #hero-games .btn-soal-mudah:hover{
   transform: scale(1.25);
+}
+
+/* style leaderboard */
+#back .leaderboard{
+  font-weight: 500;
+  font-size: 80px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0px 10px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+#back .leaderboard:hover{
+  transform: scale(1.25);
+}
+
+#hero-leaderboard {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-leaderboard.jpg") top center;
+  background-size: 1580px 780px;
+  position: relative;
+}
+
+#hero-leaderboard .hero-board {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.leaderboard {
+  opacity: 0.8;
+  margin: 30px;
+  border: 5px solid #E9958A;
+  background-color: #AF1259;
+  filter: alpha(opacity=80); /* This is for IE8 and other earlier browsers */
+  max-width: 500px;
+  max-height: 420px;
+  overflow: auto;
+}
+
+div.leaderboard h2{
+  margin-bottom: 40px;
+}
+
+div.leaderboard th, td {
+  margin: 5%;
+  color: black;
+  font-weight: bold;
+}
+
+div.leaderboard table{
+  border: 2px solid black;
+}
+
+div.leaderboard td{
+  border: 2px solid black;
+}
+
+div.leaderboard th{
+  border: 2px solid black;
 }

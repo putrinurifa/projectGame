@@ -43,6 +43,7 @@ Route::get('/timeoutSulit', [PageController::class, 'timeoutSulit'])->middleware
 Route::get('/hasilMudah/{username}/{jawaban}/{id}', [PageController::class, 'hasilMudah'])->middleware('auth');
 Route::post('/hasilSedang', [PageController::class, 'hasilSedang'])->middleware('auth');
 Route::post('/hasilSulit', [PageController::class, 'hasilSulit'])->middleware('auth');
+Route::get('/leaderboard', [PageController::class, 'leaderboard'])->middleware('auth');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
