@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             GameSeeder::class,
             SedangSeeder::class,
             SulitSeeder::class,
+            userSeeder::class,
         ]);
     }
 }

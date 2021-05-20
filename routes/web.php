@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -26,24 +27,37 @@ Route::get('/contact', [PageController::class, 'contact']);
 
 Auth::routes();
 
-// Route awal game
-Route::get('/utama', [PageController::class, 'gameUtama'])->middleware('auth');
-Route::get('/kategori', [PageController::class, 'gameKategori'])->middleware('auth');
-Route::get('/levelMudah', [PageController::class, 'levelMudah'])->middleware('auth');
-Route::get('/levelSedang', [PageController::class, 'levelSedang'])->middleware('auth');
-Route::get('/levelSulit', [PageController::class, 'levelSulit'])->middleware('auth');
+Route::middleware(['auth'])->group(function () {
 
-// Route mulai game
-Route::get('/gameMudah/{id}', [PageController::class, 'gameMudah'])->middleware('auth');
-Route::get('/gameSedang/{id}', [PageController::class, 'gameSedang'])->middleware('auth');
-Route::get('/gameSulit/{id}', [PageController::class, 'gameSulit'])->middleware('auth');
-Route::get('/timeoutMudah', [PageController::class, 'timeoutMudah'])->middleware('auth');
-Route::get('/timeoutSedang', [PageController::class, 'timeoutSedang'])->middleware('auth');
-Route::get('/timeoutSulit', [PageController::class, 'timeoutSulit'])->middleware('auth');
-Route::get('/hasilMudah/{username}/{jawaban}/{id}', [PageController::class, 'hasilMudah'])->middleware('auth');
-Route::post('/hasilSedang', [PageController::class, 'hasilSedang'])->middleware('auth');
-Route::post('/hasilSulit', [PageController::class, 'hasilSulit'])->middleware('auth');
-Route::get('/leaderboard', [PageController::class, 'leaderboard'])->middleware('auth');
+    Route::middleware(['admin'])->group(function () {
+        Route::get('admin', [AdminController::class, 'index']);
+    });
 
+    Route::middleware(['player'])->group(function () {
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        // Route awal game
+        Route::get('/utama', [PageController::class, 'gameUtama']);
+        Route::get('/kategori', [PageController::class, 'gameKategori']);
+        Route::get('/levelMudah', [PageController::class, 'levelMudah']);
+        Route::get('/levelSedang', [PageController::class, 'levelSedang']);
+        Route::get('/levelSulit', [PageController::class, 'levelSulit']);
+
+        // Route mulai game
+        Route::get('/gameMudah/{id}', [PageController::class, 'gameMudah']);
+        Route::get('/gameSedang/{id}', [PageController::class, 'gameSedang']);
+        Route::get('/gameSulit/{id}', [PageController::class, 'gameSulit']);
+        Route::get('/timeoutMudah', [PageController::class, 'timeoutMudah']);
+        Route::get('/timeoutSedang', [PageController::class, 'timeoutSedang']);
+        Route::get('/timeoutSulit', [PageController::class, 'timeoutSulit']);
+        Route::get('/hasilMudah/{username}/{jawaban}/{id}', [PageController::class, 'hasilMudah']);
+        Route::post('/hasilSedang', [PageController::class, 'hasilSedang']);
+        Route::post('/hasilSulit', [PageController::class, 'hasilSulit']);
+        Route::get('/leaderboard', [PageController::class, 'leaderboard']);
+    });
+
+    Route::get('/logout', function () {
+        Auth::logout();
+        redirect('/');
+    });
+});
