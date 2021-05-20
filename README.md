@@ -52,10 +52,30 @@ Halaman Product menampilkan semua product yang ada di game. Product yang kami ma
 User dapat memilih tingkat kesulitan.
 
 - Halaman Level mudah
-![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/easy.PNG)
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/mudah.PNG)
+Kategori soal mudah akan disajikan dalam bentuk jawaban
+pilihan.
+ Contoh :
+ ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/soalMudah.PNG)
 
 - Halaman Level Sedang
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/sedang.PNG)
-
+Kategori soal sedang akan disajikan dalam bentuk mengisi jawaban.
+ Contoh :
+ ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/soalSedang.PNG)
+ 
 - Halaman Level Sulit
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/sulit.PNG)
+Kategori soal sulit sendiri disajikan dengan soal bergambar.
+ Contoh :
+ ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/soalSulit.PNG)
+
+- Halaman Leaderboard
+Terdapat halaman leaderboard jika klik logo piala pada halaman kategori soal.
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/leaderboard.PNG)
+Halaman leaderboard akan menampilkan hasil skor dari para pemain yang telah memulai permainan. 
+
+Note :
+- Semua soal disertai waktu untuk menjawab
+- Ketika kita menjawab dengan jawaban benar maka kita akan mendapatkan notifikasi dengan skor yang ada.
+- Jika pemain tidak segera mengisi jawaban maka pemain akan kehabisan waktu dan otomatis akan keluar dari permainan. 
