@@ -40,4 +40,25 @@ class Game extends Model
             'no_soal' => $id
         ])->first();
     }
+
+    public static function getMudah()
+    {
+        return Game::where([
+            'kategori' => 'Mudah'
+        ])->get();
+    }
+
+    public static function getSedang()
+    {
+        return Game::where([
+            'kategori' => 'Sedang'
+        ])->get();
+    }
+
+    public static function getSulit()
+    {
+        return Game::where([
+            'kategori' => 'Sulit'
+        ])->get();
+    }
 }

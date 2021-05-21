@@ -56,4 +56,11 @@ class User extends Authenticatable
             'role' => 'player'
         ])->orderBy('skor', 'desc')->get();
     }
+
+    public static function leaderboard()
+    {
+        return User::where([
+            'role' => 'player'
+        ])->orderBy('skor', 'desc')->paginate(10);
+    }
 }
