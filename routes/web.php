@@ -33,6 +33,8 @@ Route::middleware(['auth'])->group(function () {
     Route::middleware(['admin'])->group(function () {
         Route::get('admin', [AdminController::class, 'index']);
         Route::get('admin/leaderboard', [AdminController::class, 'leaderboard']);
+        Route::get('/admin/cari/', [UserController::class, 'search']);
+        Route::get('/admin/delete/{id}', [UserController::class, 'delete']);
         Route::resource('admin/pengguna', UserController::class);
     });
 
