@@ -14,6 +14,10 @@ class Game extends Model
         'image',
         'jawaban',
         'kategori',
+        'pilihan1',
+        'pilihan2',
+        'pilihan3',
+        'no_soal',
         'skor',
     ];
 

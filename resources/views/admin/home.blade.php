@@ -52,7 +52,7 @@
                 <div class="icon">
                     <i class="fas fa-user"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="/admin/cari/?keyword=player" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
@@ -69,7 +69,7 @@
                 <div class="icon">
                     <i class="fab fa-etsy"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="/admin/search/?keyword=Mudah" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
@@ -86,7 +86,7 @@
                 <div class="icon">
                     <i class="fab fa-medium-m"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="/admin/search/?keyword=Sedang" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
@@ -103,7 +103,7 @@
                 <div class="icon">
                     <i class="fab fa-stripe-s"></i>
                 </div>
-                <a href="#" class="small-box-footer">
+                <a href="/admin/search/?keyword=Sulit" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>

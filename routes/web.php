@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -33,9 +34,16 @@ Route::middleware(['auth'])->group(function () {
     Route::middleware(['admin'])->group(function () {
         Route::get('admin', [AdminController::class, 'index']);
         Route::get('admin/leaderboard', [AdminController::class, 'leaderboard']);
+
+        // Route manajemen pengguna
         Route::get('/admin/cari/', [UserController::class, 'search']);
         Route::get('/admin/delete/{id}', [UserController::class, 'delete']);
         Route::resource('admin/pengguna', UserController::class);
+
+        // Route manajemen soal
+        Route::get('/admin/deleteSoal/{id}', [GameController::class, 'delete']);
+        Route::get('/admin/search/', [GameController::class, 'search']);
+        Route::resource('admin/soal', GameController::class);
     });
 
     Route::middleware(['player'])->group(function () {
