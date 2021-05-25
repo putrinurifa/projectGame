@@ -8,7 +8,7 @@
 </p>
 
 ## TIM
-|Nim	    |Nama				                |Username Github|
+|NIM	    |Nama				                |Username Github|
 |-----------|-----------------------------------|---------------|
 |1941720057 |[Muhammad Syifa’ul Ikrom Almasyriqi](https://github.com/Almasyriqi) |Almasyriqi |
 |1941720171 |[Muhammad Fauzan](https://github.com/fauzanmuh) |fauzanmuh |
@@ -74,6 +74,20 @@ Kategori soal sulit sendiri disajikan dengan soal bergambar.
 Terdapat halaman leaderboard jika klik logo piala pada halaman kategori soal.
 ![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/leaderboard.PNG)
 Halaman leaderboard akan menampilkan hasil skor dari para pemain yang telah memulai permainan. 
+
+- Halaman Admin
+- Pada halaman home Admin terdapat menu manajemen pengguna, manajemen soal, dan leaderboard serta kalender.
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/homeAdmin.PNG)
+
+- Pada halaman Manajemen Pengguna, admin dapat melakukan CRUD data pengguna.
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/crudUser.PNG)
+
+- Pada halaman Manajemen Soal, admin dapat melakukan CRUD data soal.
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/crudSoal.PNG)
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/crudSoal1.PNG)
+
+- Halaman ini menampilkan leaderboard para pemain.
+![](https://github.com/Almasyriqi/project1_web_game/raw/master/screenshot/leaderboardAdmin.PNG)
 
 Note :
 - Semua soal disertai waktu untuk menjawab
