@@ -30,6 +30,7 @@ Route::get('/contact', [PageController::class, 'contact']);
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     Route::middleware(['admin'])->group(function () {
         Route::get('admin', [AdminController::class, 'index']);
@@ -47,8 +48,6 @@ Route::middleware(['auth'])->group(function () {
     });
 
     Route::middleware(['player'])->group(function () {
-        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
         // Route awal game
         Route::get('/utama', [PageController::class, 'gameUtama']);
         Route::get('/kategori', [PageController::class, 'gameKategori']);

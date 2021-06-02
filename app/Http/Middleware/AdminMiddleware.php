@@ -18,9 +18,8 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next)
     {
         if(Auth::user()->role != "admin"){
-            return redirect()->to('home');
+            return redirect()->to('/home');
         }
-        alert()->success('Success','Login berhasil');
         return $next($request);
     }
 }
