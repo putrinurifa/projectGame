@@ -145,4 +145,5 @@
         </div>
         <!-- /.card-body -->
     </div>
+    @include('sweetalert::alert')
 @stop

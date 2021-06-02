@@ -20,6 +20,7 @@ class AdminMiddleware
         if(Auth::user()->role != "admin"){
             return redirect()->to('home');
         }
+        alert()->success('Success','Login berhasil');
         return $next($request);
     }
 }
