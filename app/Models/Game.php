@@ -14,6 +14,10 @@ class Game extends Model
         'image',
         'jawaban',
         'kategori',
+        'pilihan1',
+        'pilihan2',
+        'pilihan3',
+        'no_soal',
         'skor',
     ];
 
@@ -39,5 +43,26 @@ class Game extends Model
             'kategori' => 'Sulit',
             'no_soal' => $id
         ])->first();
+    }
+
+    public static function getMudah()
+    {
+        return Game::where([
+            'kategori' => 'Mudah'
+        ])->get();
+    }
+
+    public static function getSedang()
+    {
+        return Game::where([
+            'kategori' => 'Sedang'
+        ])->get();
+    }
+
+    public static function getSulit()
+    {
+        return Game::where([
+            'kategori' => 'Sulit'
+        ])->get();
     }
 }

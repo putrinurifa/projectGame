@@ -21,6 +21,7 @@ class User extends Authenticatable
         'email',
         'password',
         'skor',
+        'role',
     ];
 
     /**
@@ -51,6 +52,15 @@ class User extends Authenticatable
 
     public static function getAll()
     {
-        return User::orderBy('skor', 'desc')->get();
+        return User::where([
+            'role' => 'player'
+        ])->orderBy('skor', 'desc')->get();
+    }
+
+    public static function leaderboard()
+    {
+        return User::where([
+            'role' => 'player'
+        ])->orderBy('skor', 'desc')->paginate(10);
     }
 }

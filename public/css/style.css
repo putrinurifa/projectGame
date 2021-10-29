@@ -772,6 +772,25 @@
   transform: scale(1.25);
 }
 
+.page {
+  margin-top: 20px;
+}
+
+.page-item.active .page-link{
+background-color: #E78340 !important;
+border-color: #E78340 !important;
+}
+
+.page-link {
+  color: #333;
+}
+
+.page-link:hover{
+  background: #E78340;
+  border: 2px solid #E78340;
+  color: #fff;
+}
+
 #hero-kategori .btn-level-sulit {
   display: inline-block;
   padding: 20px 30px;

@@ -46,17 +46,26 @@ class PageController extends Controller
 
     public function levelMudah()
     {
-        return view('game.listMudah');
+        $game = Game::where([
+            'kategori' => 'Mudah'
+        ])->paginate(6);
+        return view('game.listMudah', ['mudah'=>$game]);
     }
 
     public function levelSedang()
     {
-        return view('game.listSedang');
+        $game = Game::where([
+            'kategori' => 'Sedang'
+        ])->paginate(6);
+        return view('game.listSedang', ['sedang'=>$game]);
     }
 
     public function levelSulit()
     {
-        return view('game.listSulit');
+        $game = Game::where([
+            'kategori' => 'Sulit'
+        ])->paginate(6);
+        return view('game.listSulit', ['sulit'=>$game]);
     }
 
     public function gameMudah($id)
