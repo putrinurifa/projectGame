@@ -17,7 +17,7 @@
         <!-- ======= Hero Section ======= -->
         <div id="hero-kategori">
             <div class="hero-btn" data-aos="zoom-in" data-aos-delay="100">
-                <a href="/levelMudah" class="btn-mudah">Mudah</a>
+                <a id="mudah" href="/levelMudah" class="btn-mudah">Mudah</a>
                 <a href="/levelSedang" class="btn-sedang">sedang</a>
                 <a href="/levelSulit" class="btn-sulit">Sulit</a>
             </div>

@@ -57,7 +57,7 @@
                         <li class="nav-item @yield('statusAbout')">
                             <a class="nav-link" href="/about">About Us</a>
                         </li>
-                        <li class="nav-item @yield('statusProduct')">
+                        <li id="product" class="nav-item @yield('statusProduct')">
                             <a class="nav-link" href="/product">Product</a>
                         </li>
                         <li class="nav-item @yield('statusContact')">

@@ -49,7 +49,7 @@
                 <div class="card" style="width: 18rem;">
                         <img src="https://rekreartive.com/wp-content/uploads/2018/10/Logo-Polinema-Politeknik-Negeri-Malang-PNG-1140x1138.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Putri Nurifa Firdausia  1941720036  </h5>
+                            <h5 id="putri" class="card-title">Putri Nurifa Firdausia  1941720036  </h5>
                         </div>
                 </div>
             </div>
